@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>响应式布局工具</title>
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <style media="screen">
+      * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      /*   responsive tool start */
+      .row::after, .row::before {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .col {float: left}
+
+      .l1 {width: 8.33%}
+      .l2 {width: 16.66%}
+      .l3 {width: 25%}
+      .l4 {width: 33.33%}
+      .l5 {width: 41.66%}
+      .l6 {width: 50%}
+      .l7 {width: 58.33%}
+      .l8 {width: 66.66%}
+      .l9 {width: 75%}
+      .l10 {width: 83.33%}
+      .l11 {width: 91.66%}
+      .l12 {width: 100%}
+
+      @media only screen and (max-width: 600px) {
+        .s1 {width: 8.33%}
+        .s2 {width: 16.66%}
+        .s3 {width: 25%}
+        .s4 {width: 33.33%}
+        .s5 {width: 41.66%}
+        .s6 {width: 50%}
+        .s7 {width: 58.33%}
+        .s8 {width: 66.66%}
+        .s9 {width: 75%}
+        .s10 {width: 83.33%}
+        .s11 {width: 91.66%}
+        .s12 {width: 100%}
+      }
+      @media only screen and (min-width: 601px) and (max-width: 768px){
+        .m1 {width: 8.33%}
+        .m2 {width: 16.66%}
+        .m3 {width: 25%}
+        .m4 {width: 33.33%}
+        .m5 {width: 41.66%}
+        .m6 {width: 50%}
+        .m7 {width: 58.33%}
+        .m8 {width: 66.66%}
+        .m9 {width: 75%}
+        .m10 {width: 83.33%}
+        .m11 {width: 91.66%}
+        .m12 {width: 100%}
+      }
+  /*   responsive tool end */
+      .box {
+        /*width: 25%;*/
+        height: 200px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 200px;
+        /*float: left;*/
+      }
+      .orange {
+        background-color: orange;
+      }
+      .green {
+        background-color: green;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .blue {
+        background-color: blue;
+      }
+      h1 {
+        text-align: center;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>响应式布局</h1>
+    <div class="row">
+      <div class="col l3 m6 s12">
+        <div class="box orange">
+          1
+        </div>
+      </div>
+      <div class="col l3 m6 s12">
+        <div class="box green">
+          2
+        </div>
+      </div>
+      <div class="col l3 m6 s12">
+        <div class="box yellow">
+          3
+        </div>
+      </div>
+      <div class="col l3 m6 s12">
+        <div class="box blue">
+          4
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

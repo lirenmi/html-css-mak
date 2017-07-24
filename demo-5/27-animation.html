@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>animation 动画</title>
+    <style media="screen">
+      .animation {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        -moz-animation: example 5s 1s ease-in-out infinite alternate;
+        -webkit-animation: example 5s 1s ease-in-out infinite alternate;
+        animation: example 5s 1s ease-in-out infinite alternate;
+        position: relative;
+        left: 0;
+        top: 0;
+      }
+      @-webkit-keyframes example {
+        /*from {background-color: green;left:0;top: 0}
+        to {background-color: blue;left: 80%;top: 0}*/
+        0% {background-color: green;left:0;top: 0}
+        25% {background-color: blue;left: 80%;top: 0}
+        50% {background-color: blue;left: 80%;top: 300px}
+        75% {background-color: blue;left: 0;top: 300px}
+        100% {background-color: blue;left: 0;top: 0}
+      }
+      @-moz-keyframes example {
+        /*from {background-color: green;left:0;top: 0}
+        to {background-color: blue;left: 80%;top: 0}*/
+        0% {background-color: green;left:0;top: 0}
+        25% {background-color: blue;left: 80%;top: 0}
+        50% {background-color: blue;left: 80%;top: 300px}
+        75% {background-color: blue;left: 0;top: 300px}
+        100% {background-color: blue;left: 0;top: 0}
+      }
+      @keyframes example {
+        /*from {background-color: green;left:0;top: 0}
+        to {background-color: blue;left: 80%;top: 0}*/
+        0% {background-color: green;left:0;top: 0}
+        25% {background-color: blue;left: 80%;top: 0}
+        50% {background-color: blue;left: 80%;top: 300px}
+        75% {background-color: blue;left: 0;top: 300px}
+        100% {background-color: blue;left: 0;top: 0}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animation">
+
+    </div>
+  </body>
+</html>

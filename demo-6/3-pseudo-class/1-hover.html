@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>伪类选择器 hover</title>
+    <style media="screen">
+      div {
+        border: 1px solid blue;
+      }
+      div p {
+        display: none;
+        background-color: yellow;
+        padding: 20px;
+      }
+      /*div:hover {
+        background-color: yellow;
+      }*/
+      div:hover p {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      鼠标放在我的上面👆
+      <p>hello ， 伪类选择器</p>
+    </div>
+  </body>
+</html>
+<!--
+author:01叔
+QQ交流群：659123270
+-->

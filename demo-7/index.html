@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>box model 框模型</title>
+    <style media="screen">
+      div {
+        background-color: #eee;
+        width: 300px;
+        height: 180px;
+        padding: 20px;
+        border: 30px solid lightblue;
+        margin: 30px;
+      }
+      span {
+        background-color: #eee;
+        width: 300px;
+        height: 180px;
+        padding: 20px;
+        border: 30px solid lightblue;
+        margin: 30px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- all width 460px = 300 + 20+20 + 30+30 + 30+30 -->
+    <div>
+      所有的元素最终在浏览器上面表现出来的都是一个box model
+    </div>
+    <br>
+    <span>
+      所有的元素最终在浏览器上面表现出来的都是一个box model
+    </span>
+  </body>
+</html>
+<!--
+author:01叔
+QQ交流群：659123270
+-->

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>元素左对齐、右对齐</title>
+    <style media="screen">
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        position: relative;
+      }
+      .right {
+        background-color: lightblue;
+        width: 200px;
+        height: 100px;
+        /*position: absolute;
+        right: 0;*/
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>left right align</h1>
+    <h2>position / float</h2>
+    <div class="container">
+      <div class="right">
+        <p>段落的内容...</p>
+      </div>
+    </div>
+
+  </body>
+</html>

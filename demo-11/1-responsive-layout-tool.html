@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>响应式布局</title>
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <style media="screen">
+      * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .row::after, .row::before {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .box {
+        width: 25%;
+        height: 200px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 200px;
+        float: left;
+      }
+      .orange {
+        background-color: orange;
+      }
+      .green {
+        background-color: green;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .blue {
+        background-color: blue;
+      }
+      h1 {
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .box {
+          width: 100%;
+        }
+      }
+      @media only screen and (min-width: 601px) and (max-width: 768px){
+        .box {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>响应式布局</h1>
+    <div class="row">
+
+      <div class="box orange">
+        1
+      </div>
+      <div class="box green">
+        2
+      </div>
+      <div class="box yellow">
+        3
+      </div>
+      <div class="box blue">
+        4
+      </div>
+
+    </div>
+
+  </body>
+</html>
+<!--
+author:01叔
+QQ交流群：659123270
+-->

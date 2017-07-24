@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>opacity 透明度</title>
+    <style media="screen">
+      .opacity {
+        opacity: 0.5;
+      }
+      .box {
+        width: 400px;
+        height: 300px;
+        background-color: rgb(8, 138, 118);
+        opacity: 0.5;
+      }
+      .rgba {
+        width: 400px;
+        height: 300px;
+        background-color: rgba(8, 138, 118,0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <img class="opacity" src="https://unsplash.it/400/300?image=1069" width="400" height="300" alt="海">
+    <img src="https://unsplash.it/400/300?image=1069" width="400" height="300" alt="海">
+    <div class="box">
+      <h1>box content</h1>
+    </div>
+    <div class="rgba ">
+      <h1>box content</h1>
+    </div>
+  </body>
+</html>
